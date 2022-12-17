@@ -3,11 +3,8 @@ package com.bookingsystem.bookingsystem.model;
 import javax.persistence.*;
 
 @Entity
-public class Contact  {
+public class Contact  extends BaseEntity {
 
-    @Id
-    @Column(name = "id", nullable = false)
-    private Long id;
     private String firstName;
     private String lastName;
     private int mobileNumber;

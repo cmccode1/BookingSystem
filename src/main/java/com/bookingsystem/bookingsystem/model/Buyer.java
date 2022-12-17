@@ -3,11 +3,8 @@ package com.bookingsystem.bookingsystem.model;
 import javax.persistence.*;
 
 @Entity
-public class Buyer {
+public class Buyer  extends BaseEntity{
 
-    @Id
-    @Column(name = "id", nullable = false)
-    private Long id;
 
     @OneToOne
     @JoinColumn(name = "contact_id")

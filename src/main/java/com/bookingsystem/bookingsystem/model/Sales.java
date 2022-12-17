@@ -8,11 +8,9 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 
 @Entity
-public class Sales  {
+public class Sales  extends BaseEntity {
 
-    @Id
-    @Column(name = "id", nullable = false)
-    private Long id;
+
     private double cost;
     private CurrencyEnum currency;
     private SalesStatusEnum status;

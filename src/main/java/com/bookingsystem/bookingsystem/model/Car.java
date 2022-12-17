@@ -10,11 +10,11 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 
 @Entity
-public class Car {
+public class Car extends BaseEntity {
 
-    @Id
-    @Column(name = "id", nullable = false)
-    private Long id;
+//    @Id
+//    @Column(name = "id", nullable = false)
+//    private Long id;
     private int seats;
     private boolean modified;
     private CarBodyTypeEnum bodyType;

@@ -3,11 +3,9 @@ package com.bookingsystem.bookingsystem.model;
 import javax.persistence.*;
 
 @Entity
-public class Seller  {
+public class Seller  extends BaseEntity {
 
-    @Id
-    @Column(name = "id", nullable = false)
-    private Long id;
+
     private int vehicleCount;
 
     @OneToOne

@@ -1,14 +1,17 @@
 package com.bookingsystem.bookingsystem.model;
 
 
+import jdk.nashorn.internal.objects.annotations.Getter;
+import jdk.nashorn.internal.objects.annotations.Setter;
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
+
 import javax.persistence.*;
 
+@NoArgsConstructor
+@AllArgsConstructor
 @Entity
-public class Account  {
-
-    @Id
-    @Column(name = "id", nullable = false)
-    private Long id;
+public class Account  extends BaseEntity{
 
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private int accountNumber;
@@ -45,11 +48,4 @@ public class Account  {
         this.cars = cars;
     }
 
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
 }

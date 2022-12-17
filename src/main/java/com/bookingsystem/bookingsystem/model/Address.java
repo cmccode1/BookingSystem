@@ -5,11 +5,9 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 
 @Entity
-public class Address {
+public class Address  extends BaseEntity {
 
-    @Id
-    @Column(name = "id", nullable = false)
-    private Long id;
+
     private String firstLine;
     private String secondLine;
     private String city;
