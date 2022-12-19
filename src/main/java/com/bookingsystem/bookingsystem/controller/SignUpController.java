@@ -5,16 +5,11 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-public class LoginController {
+public class SignUpController {
 
-    @RequestMapping({"/login"})
-    public String returnLogin(Model model){
-
-        int[] intArr = new int[4];
-
-        intArr.length
-
-        return "login";
+    @RequestMapping({"/signup", "signup"})
+    public String returnSignUp (Model model){
+        return "signup";
     }
 
 }

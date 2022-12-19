@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Home</title>
+</head>
+<body>
+<h2 th:text="SignUp">SignUp</h2>
+
+
+<form action="https://localhost:8080/signup" target="_blank">
+    <button type="submit"> Complete Sign-Up </button>
+</form>
+
+<br />
+<a class="btn btn-default" th:href="@{/login}">Add Owner</a>
+
+</body>
+</html>
